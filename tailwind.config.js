@@ -4,8 +4,11 @@ export default {
     "./index.html",
   ],
   theme: {
+    colors: {
+      gopher: "#5fdbff",
+      bg: "#a3a28e",
+    },
     extend: {},
   },
   plugins: [],
 }
-

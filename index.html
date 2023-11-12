@@ -12,45 +12,53 @@
         @tailwind utilities;
 
         .link {
-            @apply hover:text-yellow-500
+            @apply hover:text-gopher
         }
     </style>
 </head>
-<body class="bg-slate-950 text-white">
-<main class="flex justify-center items-center min-h-screen">
-    <div class="max-w-screen-lg flex bg-slate-900 rounded-r-2xl">
-        <div>
-            <img src="https://cdn.farwydi.dev/5041061.jpg" alt="photo" class="rounded-l-2xl max-w-xs">
-        </div>
-        <div class="flex flex-col justify-between ml-5 p-4">
-            <div>
-                <h2 class="text-3xl mb-3">Leonid Zharikov</h2>
-                <h3 class="text-1xl mb-1 italic">Software engineer</h3>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet deserunt error harum laboriosam nam nobis
-                optio quis rerum similique voluptatem. Consequatur ducimus impedit laboriosam magnam natus odio
-                perferendis.
-                Fuga, magni.
-            </div>
-            <div class="flex">
-                <div class="ml-auto">
-                    <h3 class="text-2xl">Social media:</h3>
-                    <div>
-                        <a href="https://www.linkedin.com/in/farwydi/"
-                           target="_blank"
-                           class="link">LinkedIn</a>
-                        <a href="https://github.com/farwydi"
-                           target="_blank"
-                           class="link">GitHub</a>
-                        <a href="https://t.me/farwydi"
-                           target="_blank"
-                           class="link">Telegram</a>
-                        <a href="https://www.youtube.com/channel/UC-EpwZ8tespIDmqF7PVw8Ug"
-                           target="_blank"
-                           class="link">YouTube</a>
-                    </div>
+<body>
+<main class="flex justify-around">
+    <div class="min-h-screen flex items-center flex-1 justify-center">
+        <section class="flex flex-col">
+            <h1 class="text-5xl mb-2 font-serif font-normal tracking-wide antialiased">Leonid Zharikov</h1>
+            <h2 class="text-3xl mb-10 font-mono antialiased">Software engineer</h2>
+
+            <address class="flex flex-col not-italic">
+                <span class="mb-1"><b>Email</b>
+                    <a href="#"
+                       class="link"
+                       data-contact="bGVvbi56aGFyaWtvdkBnbWFpbC5jb20="
+                       onfocus="this.href = 'mailto:' + atob(this.dataset.contact)">
+                    Click to show
+                </a></span>
+
+                <span class="mb-1"><b>Address</b> Larnaca, CY</span>
+
+                <div class="[&>*:not(:last-child)]:mr-1">
+                    <a href="https://www.linkedin.com/in/farwydi/"
+                       target="_blank"
+                       class="link">LinkedIn</a>
+                    <a href="https://github.com/farwydi"
+                       target="_blank"
+                       class="link">GitHub</a>
+                    <a href="https://t.me/farwydi"
+                       target="_blank"
+                       class="link">Telegram</a>
+                    <a href="https://www.youtube.com/channel/UC-EpwZ8tespIDmqF7PVw8Ug"
+                       target="_blank"
+                       class="link">YouTube</a>
                 </div>
+            </address>
+
+            <div class="mt-20 flex flex-col items-center">
+                <span><a href="https://cdn.farwydi.dev/CV-Leonid-Zharikov-EU.pdf"
+                         target="_blank"
+                         class="link">See full CV</a></span>
             </div>
-        </div>
+        </section>
+    </div>
+    <div class="flex items-center justify-center min-h-screen bg-bg flex-1">
+        <img src="https://cdn.farwydi.dev/5041061.jpg" alt="photo" class="max-w-xs">
     </div>
 </main>
 </body>
