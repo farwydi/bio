@@ -17,48 +17,44 @@
     </style>
 </head>
 <body>
-<main class="flex justify-around">
-    <div class="min-h-screen flex items-center flex-1 justify-center">
-        <section class="flex flex-col">
-            <h1 class="text-5xl mb-2 font-serif font-normal tracking-wide antialiased">Leonid Zharikov</h1>
-            <h2 class="text-3xl mb-10 font-mono antialiased">Software engineer</h2>
+<main class="px-10 min-h-screen flex flex-col justify-center items-center">
+    <div>
+        <h1 class="text-5xl mb-2 font-serif font-normal tracking-wide antialiased">Leonid Zharikov</h1>
+        <h2 class="text-3xl mb-10 font-mono antialiased">Software engineer</h2>
 
-            <address class="flex flex-col not-italic">
-                <span class="mb-1"><b>Email</b>
-                    <a href="#"
-                       class="link"
-                       data-contact="bGVvbi56aGFyaWtvdkBnbWFpbC5jb20="
-                       onfocus="this.href = 'mailto:' + atob(this.dataset.contact)">
-                    Click to show
-                </a></span>
+        <address class="flex flex-col not-italic">
+        <span class="mb-1"><b>Email</b>
+            <a href="#"
+               class="link"
+               data-contact="bGVvbi56aGFyaWtvdkBnbWFpbC5jb20="
+               onfocus="this.href = 'mailto:' + atob(this.dataset.contact); this.text = atob(this.dataset.contact)">
+                Click to show
+            </a>
+        </span>
 
-                <span class="mb-1"><b>Address</b> Larnaca, CY</span>
+            <span class="mb-1"><b>Address</b> Larnaca, CY</span>
 
-                <div class="[&>*:not(:last-child)]:mr-1">
-                    <a href="https://www.linkedin.com/in/farwydi/"
-                       target="_blank"
-                       class="link">LinkedIn</a>
-                    <a href="https://github.com/farwydi"
-                       target="_blank"
-                       class="link">GitHub</a>
-                    <a href="https://t.me/farwydi"
-                       target="_blank"
-                       class="link">Telegram</a>
-                    <a href="https://www.youtube.com/channel/UC-EpwZ8tespIDmqF7PVw8Ug"
-                       target="_blank"
-                       class="link">YouTube</a>
-                </div>
-            </address>
-
-            <div class="mt-20 flex flex-col items-center">
-                <span><a href="https://cdn.farwydi.dev/CV-Leonid-Zharikov-EU.pdf"
-                         target="_blank"
-                         class="link">See full CV</a></span>
+            <div class="[&>*:not(:last-child)]:mr-1">
+                <a href="https://www.linkedin.com/in/farwydi/"
+                   target="_blank"
+                   class="link">LinkedIn</a>
+                <a href="https://github.com/farwydi"
+                   target="_blank"
+                   class="link">GitHub</a>
+                <a href="https://t.me/farwydi"
+                   target="_blank"
+                   class="link">Telegram</a>
+                <a href="https://www.youtube.com/channel/UC-EpwZ8tespIDmqF7PVw8Ug"
+                   target="_blank"
+                   class="link">YouTube</a>
             </div>
-        </section>
-    </div>
-    <div class="flex items-center justify-center min-h-screen bg-bg flex-1">
-        <img src="https://cdn.farwydi.dev/5041061.jpg" alt="photo" class="max-w-xs">
+        </address>
+
+        <div class="mt-20 text-center">
+            <a href="https://cdn.farwydi.dev/CV-Leonid-Zharikov-EU.pdf"
+               target="_blank"
+               class="link">See full CV</a>
+        </div>
     </div>
 </main>
 </body>
