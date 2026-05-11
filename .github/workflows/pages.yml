@@ -32,8 +32,6 @@ jobs:
           echo 'farwydi.dev' > _site/CNAME
 
       - uses: actions/configure-pages@v5
-        with:
-          enablement: true   # turn Pages on for the repo if it isn't already
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
